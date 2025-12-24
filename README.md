@@ -61,10 +61,14 @@ The proposed approach achieves better sensing accuracy and communication perform
 ## 🧠 How It Works
 
 The system models a Constrained Markov Decision Process (CMDP) where:
-    -State: Historical channel estimates and position spectra
-    -Action: Updates to the analog precoding matrix
-    -Reward: Negative CRLB (sensing accuracy)
-    -Cost: Negative spectral efficiency (communication performance)
+
+    State: Historical channel estimates and position spectra
+    
+    Action: Updates to the analog precoding matrix
+    
+    Reward: Negative CRLB (sensing accuracy)
+    
+    Cost: Negative spectral efficiency (communication performance)
 
 The agent is trained using PD-DDPG with a Wolpertinger-based action selector to handle variable user counts and complex constraints.
 
